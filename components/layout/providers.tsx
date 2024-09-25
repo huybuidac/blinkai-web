@@ -1,19 +1,16 @@
 'use client';
 import React from 'react';
 import ThemeProvider from './ThemeToggle/theme-provider';
-import { SessionProvider, SessionProviderProps } from 'next-auth/react';
-export default function Providers({
-  session,
-  children
-}: {
-  session: SessionProviderProps['session'];
-  children: React.ReactNode;
-}) {
+import { SolanaProvider } from './solana-provider';
+
+require('@solana/wallet-adapter-react-ui/styles.css');
+
+export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <SolanaProvider>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <SessionProvider session={session}>{children}</SessionProvider>
+        {children}
       </ThemeProvider>
-    </>
+    </SolanaProvider>
   );
 }
