@@ -16,7 +16,6 @@ export const useUserPoolInfo = (
     persister: storagePersister,
     enabled: !!slug && !!user,
     queryFn: async (context) => {
-      console.log('userPoolInfo', context);
       const slug = context.queryKey[1] as string;
       const user = context.queryKey[2] as string;
 

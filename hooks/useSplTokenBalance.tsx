@@ -18,7 +18,6 @@ export const useSplTokenBalance = (
     persister: storagePersister,
     enabled: !!mint && !!user,
     queryFn: async (context) => {
-      console.log('spl-token-balance', context.queryKey);
       const mintAddr = context.queryKey[1] as string;
       const userAddr = context.queryKey[2] as string;
 
