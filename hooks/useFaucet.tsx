@@ -54,7 +54,11 @@ export const useFaucet = () => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({
-        queryKey: ['spl-token-balance', mint, connectedAccount!.toString()]
+        queryKey: [
+          'spl-token-balance',
+          mint.toString(),
+          connectedAccount!.toString()
+        ]
       });
       toast({
         title: 'Faucet successful',
