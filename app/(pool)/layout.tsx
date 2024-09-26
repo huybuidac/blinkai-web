@@ -2,8 +2,8 @@ import Header from '@/components/layout/header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn Dashboard Starter',
-  description: 'Basic dashboard with Next.js and Shadcn'
+  title: 'BlinkAI Simple Token Vault',
+  description: 'BlinkAI Simple Token Vault'
 };
 
 export default function PoolLayout({

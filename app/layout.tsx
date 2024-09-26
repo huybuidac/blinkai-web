@@ -9,8 +9,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn',
-  description: 'Basic dashboard with Next.js and Shadcn'
+  title: 'BlinkAI Simple Token Vault',
+  description: 'BlinkAI Simple Token Vault'
 };
 
 export default async function RootLayout({
