@@ -1,3 +1,7 @@
+## Demo
+
+https://blinkai-web.vercel.app/
+
 ## Installation and Running
 
 1. Install dependencies:
