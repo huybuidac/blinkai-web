@@ -1,14 +1,7 @@
 'use client';
 import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle
-} from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 import { usePoolInfo } from '@/hooks/usePoolInfo';
 import { useSolana } from '@/hooks/useSolana';
 import { useUserPoolInfo } from '@/hooks/useUserPoolInfo';
@@ -16,10 +9,7 @@ import { useSplToken } from '@/hooks/useSplToken';
 import { useSplTokenBalance } from '@/hooks/useSplTokenBalance';
 import { formatUnits, parseUnits } from 'viem';
 import { _100_PERCENT } from '@/lib/blink-solana';
-import {
-  WalletMultiButton,
-  WalletConnectButton
-} from '@solana/wallet-adapter-react-ui';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { useMemo, useState } from 'react';
 import { useDeposit } from '@/hooks/useDeposit';
 import { ReloadIcon } from '@radix-ui/react-icons';
